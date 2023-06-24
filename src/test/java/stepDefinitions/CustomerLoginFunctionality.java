@@ -24,11 +24,12 @@ public class CustomerLoginFunctionality extends Base {
     public void i_click_on_login_menu() {
 
         click( LandingPage.menuLogin );
-        System.out.println("Hello");
+
     }
     @Then("I click on Customer Login Menu")
     public void i_click_on_customer_login_menu() {
         click(EmployeeLoginPage.menuCustomerLogin );
+        System.out.println("Hello");
     }
     @Then("I Enter User Id")
     public void i_enter_user_id() {
