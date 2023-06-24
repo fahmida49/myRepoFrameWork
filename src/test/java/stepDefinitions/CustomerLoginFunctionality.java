@@ -11,6 +11,7 @@ import pages.CustomerLoginPage;
 import pages.EmployeeLoginPage;
 import pages.LandingPage;
 
+import static jdk.internal.logger.DefaultLoggerFinder.SharedLoggers.system;
 import static org.junit.Assert.assertEquals;
 
 public class CustomerLoginFunctionality extends Base {
@@ -20,8 +21,11 @@ public class CustomerLoginFunctionality extends Base {
     }
 
     @Then("I click on Login Menu")
+
     public void i_click_on_login_menu() {
+
         click( LandingPage.menuLogin );
+        System.out.println("Hello");
     }
     @Then("I click on Customer Login Menu")
     public void i_click_on_customer_login_menu() {
